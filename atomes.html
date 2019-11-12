@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <link rel="stylesheet" href="stylebootswatch.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Atomes</title>
+  </head>
+  <body>
+
+    <a href="index.html">RETOUR A L'INDEX</a>
+
+    <br /><br />
+    <h1>Buttons</h1>
+    
+<p>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+    
+</p><p>
+
+    <button type="button" class="btn btn-primary disabled">Primary</button>
+    <button type="button" class="btn btn-secondary disabled">Secondary</button>
+    <button type="button" class="btn btn-success disabled">Success</button>
+    <button type="button" class="btn btn-info disabled">Info</button>
+    <button type="button" class="btn btn-warning disabled">Warning</button>
+    <button type="button" class="btn btn-danger disabled">Danger</button>
+    <button type="button" class="btn btn-link disabled">Link</button>
+    
+</p><p>
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+
+</p><p>
+
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        </div>
+    </div>
+    </div>
+    
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-success">Success</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop2" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        </div>
+    </div>
+    </div>
+    
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-info">Info</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        </div>
+    </div>
+    </div>
+    
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-danger">Danger</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        </div>
+    </div>
+    </div>
+
+</p><p>
+
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-primary">Default button</button>
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+
+</p>
+
+<br /><br /><h1>Formulaires</h1>
+<form>
+        <fieldset>
+          <legend>Legend</legend>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleSelect1">Example select</label>
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleSelect2">Example multiple select</label>
+            <select multiple="" class="form-control" id="exampleSelect2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea">Example textarea</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+          </div>
+          <fieldset class="form-group">
+            <legend>Radio buttons</legend>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Option one is this and that—be sure to include why it's great
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two can be something else and selecting it will deselect option one
+              </label>
+            </div>
+            <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                Option three is disabled
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend>Checkboxes</legend>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" checked="">
+                Option one is this and that—be sure to include why it's great
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" disabled="">
+                Option two is disabled
+              </label>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+
+
+<br /><br /><h1>Tables</h1>
+<table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Column heading</th>
+            <th scope="col">Column heading</th>
+            <th scope="col">Column heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-active">
+            <th scope="row">Active</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr>
+            <th scope="row">Default</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-primary">
+            <th scope="row">Primary</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">Secondary</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">Success</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">Danger</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">Warning</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-info">
+            <th scope="row">Info</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-light">
+            <th scope="row">Light</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-dark">
+            <th scope="row">Dark</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+        </tbody>
+      </table> 
+
+
+<br /><br /><h1>Typographie</h1>
+
+
+      <!-- Typography
+      ================================================== -->
+      <div class="bs-docs-section">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="page-header">
+                  <h1 id="typography">Typography</h1>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Headings -->
+    
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="bs-component">
+                  <h1>Heading 1</h1>
+                  <h2>Heading 2</h2>
+                  <h3>Heading 3</h3>
+                  <h4>Heading 4</h4>
+                  <h5>Heading 5</h5>
+                  <h6>Heading 6</h6>
+                  <h3>
+                    Heading
+                    <small class="text-muted">with muted text</small>
+                  </h3>
+                  <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="bs-component">
+                  <h2>Example body text</h2>
+                  <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                  <p><small>This line of text is meant to be treated as fine print.</small></p>
+                  <p>The following is <strong>rendered as bold text</strong>.</p>
+                  <p>The following is <em>rendered as italicized text</em>.</p>
+                  <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+                </div>
+    
+              </div>
+              <div class="col-lg-4">
+                <div class="bs-component">
+                  <h2>Emphasis classes</h2>
+                  <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                  <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p class="text-secondary">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                  <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+                  <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                  <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                </div>
+    
+              </div>
+            </div>
+    
+            <!-- Blockquotes -->
+    
+            <div class="row">
+              <div class="col-lg-12">
+                <h2 id="type-blockquotes">Blockquotes</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="bs-component">
+                  <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="bs-component">
+                  <blockquote class="blockquote text-center">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="bs-component">
+                  <blockquote class="blockquote text-right">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+<br /><br /><h1>Badges</h1>
+
+<div class="bs-component" style="margin-bottom: 40px;">
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-secondary">Secondary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-danger">Danger</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-info">Info</span>
+        <span class="badge badge-light">Light</span>
+        <span class="badge badge-dark">Dark</span>
+      </div>
+      <div class="bs-component">
+        <span class="badge badge-pill badge-primary">Primary</span>
+        <span class="badge badge-pill badge-secondary">Secondary</span>
+        <span class="badge badge-pill badge-success">Success</span>
+        <span class="badge badge-pill badge-danger">Danger</span>
+        <span class="badge badge-pill badge-warning">Warning</span>
+        <span class="badge badge-pill badge-info">Info</span>
+        <span class="badge badge-pill badge-light">Light</span>
+        <span class="badge badge-pill badge-dark">Dark</span>
+      </div>
+      
+<br /><br /><h1></h1>
+<br /><br /><h1></h1>
+<br /><br /><h1></h1>
+<br /><br /><h1></h1>
+
+
+  </body>
+
+
+</html>
